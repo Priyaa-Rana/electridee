@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.nav-links{
+  font-family:'Poppins',sans-serif ;
+}
+@media (max-width: 768px) {
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    position: absolute;
+    top: 60px;
+    margin-top: 20px;
+    left: 0;
+    background-color: #D1E7C4;
+    text-align: center;
+    height: 100vh;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+    transform: translateX(0);
+    animation: slideIn 0.3s ease forwards;
+  }
+  .nav-links.closing {
+    animation: slideOut 0.3s ease forwards; /* Slide-out animation on close */
+  }
+  
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-bottom: 30px;
+    color: black;
+    
+  }
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Sidebar Slide Out Animation */
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

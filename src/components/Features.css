@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.feature-div {
+  background-color: #D1E7C4;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  height: fit-content ;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 10%;
+  position: relative;
+  font-family: 'Poppins',sans-serif;
+  padding-left: 8%;
+  padding-right: 3%;
+  padding-top: 5%;
+  
+  
+}
+ .headingg{
+  text-align: center;
+   
+    margin-top: 0;
+  
+    font-size: 60px;
+   
+    color: #000;
+ 
+   
+ }
+.feature-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  
+ 
+  
+}
+
+img {
+  width: 380px; /* Adjust width as needed */
+ 
+   /* Maintain aspect ratio */
+  margin-right: 480px; /* Space between image and text */
+  margin-left: 50px;
+
+}
+
+h5 {
+  font-size: 23px;
+  color: rgb(64, 63, 63);
+  font-weight: 400;
+  margin: 0;
+  max-width: 60%; /* Adjust text width for balance */
+  
+}
+
+/* Responsive adjustments */
+@media (max-width: 950px) {
+  .feature-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center content horizontally */
+  }
+
+  img {
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: none; /* Remove max-width constraint */
+    margin: 0; /* Remove margin for stacking */
+  }
+
+  h5 {
+   max-width: fit-content;
+    margin-top: 20px; /* Space above text when stacked */
+   padding: 10px;
+    
+  }
+}

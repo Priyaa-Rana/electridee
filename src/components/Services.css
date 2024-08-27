@@ -1,0 +1,27 @@
+
+.service > h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 60px;
+  color: #000000;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  padding-bottom: 100px;
+  padding-top: 70px;
+}
+
+
+
+.ser1 {
+  border-radius: 5px 5px 125px 5px;
+  padding-top: 25px;
+  right:5%;
+}
+
+.ser2 {
+  border-radius: 5px 5px 5px 125px;
+  padding-top: 35px;
+  
+  
+}
+
